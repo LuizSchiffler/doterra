@@ -1,0 +1,198 @@
+/** HOME PAGE STYLES ********************************************************************/
+
+.home {
+    background-image: url(/img/lavenderDesktop.jpg);
+    padding: 20px 0 25% 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    // background-image: url(/img/lavenderDesktop.jpg);
+    // padding-top: 60px;
+    // background-size: 100%;
+    // background-repeat: no-repeat;
+    // background-position: top center;
+    // background-color: #0c0a0d;
+    // padding-bottom: 3em;
+    // margin-bottom: -3em;
+
+    .stripe {
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin-top: 130px;
+    }
+
+    h1 {
+        font-size: 100px;
+        line-height: 70px;
+        margin: -8px 0 20px 0px;
+        font-family: "Parisienne", Cursive;
+        color: #fff;
+    }
+
+    p {
+        padding-left: 2rem;
+        color: #fff;
+        font-size: 1.7rem;
+        line-height: 1.6;
+        margin-bottom: 1.25rem;
+        text-rendering: optimizeLegibility;
+        font-weight: 400;
+    }
+
+    .video_container {
+        margin-top: -105px;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px 20px 15px 20px;
+        border-radius: 8px;
+        // max-width: 468px;
+
+        .videoContent {
+            a {
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    border-radius: 8px;
+                    -webkit-transition: all 0.2s linear;
+                    -moz-transition: all 0.2s linear;
+                    -o-transition: all 0.2s linear;
+                    -ms-transition: all 0.2s linear;
+                    transition: all 0.2s linear;
+                }
+
+                h6 {
+                    text-align: center;
+                    margin-bottom: 0;
+                    padding: 3px 0px;
+                    font-size: 16px;
+                    color: #222;
+                }
+            }
+
+            a:hover {
+                img {
+                    -webkit-transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    -o-transform: scale(1.05);
+                    -ms-transform: scale(1.05);
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    .bioCont {
+        margin-top: -21px !important;
+        max-width: 290px;
+        background-color: #b268c7;
+        padding: 20px;
+        color: #fff;
+        text-align: left;
+        border-radius: 8px;
+        border: 1px solid #fff;
+        box-shadow: 10px 20px 15px -5px rgba(0, 0, 0, 0.2);
+        margin: 20px auto 0 auto;
+
+        .advocate {
+            padding-bottom: 1em;
+            max-width: 248px;
+            margin: auto;
+
+            h6 {
+                font-family: 'Source Sans Pro', sans-serif;
+                margin: 5px 0 0 0;
+                text-align: center;
+                border-bottom: 1px solid #fff;
+                font-size: 20px;
+                font-weight: 200;
+            }
+
+            small {
+                display: block;
+                font-size: 10px;
+                text-align: center;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 4px;
+            display: block;
+            margin: auto;
+        }
+
+        .statement {
+            font-size: 12px;;
+        }
+
+        a {
+            display: block;
+            background-color: rgba(255, 255, 255, 0);
+            color: #fff;
+            font-size: 13px;
+            padding: 5px 3px;
+            text-align: center;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .home {
+        margin-top: 55px !important;
+        padding-top: 60px;
+        background-image: url(/img/lavenderDesktop.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 1025px !important;
+        width: unset;
+        background-color: #0c0a0d;
+        padding: 0 0 3em 0;
+
+        .container-fluid {
+            margin-top: 35px !important;
+        }
+
+        h1 {
+            margin-bottom: 0px;
+        }
+
+        .home_text {
+            margin-bottom: 45px;
+        }
+    }
+
+    .stripe-mobile {
+        height: unset !important;
+        background-color: rgba(0, 0, 0, 0.3) !important;
+        margin-top: unset !important;
+    }
+}
+
+@media (max-width: 544px) {
+    .home {
+        h1 {
+            font-size: 48px !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .video_container {
+        margin-top: 35px !important;
+        max-width: 468px;
+        margin: 3em auto;
+
+        .videoContent {
+            margin-bottom: 20px;
+        }
+    }
+}
